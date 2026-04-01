@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bflr2wyoivuqo"]
+
+[ext_resource type="Texture2D" uid="uid://chrnflen6k2f2" path="res://icon.svg" id="1_xc6f1"]
+[ext_resource type="Script" uid="uid://isr5we83eg7q" path="res://using_signal/using_signal.gd" id="2_kedb7"]
+
+[node name="Node2D" type="Node2D" unique_id=647892934]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=829922022]
+position = Vector2(576, 320)
+texture = ExtResource("1_xc6f1")
+script = ExtResource("2_kedb7")
+
+[node name="Timer" type="Timer" parent="Sprite2D" unique_id=2015574380]
+autostart = true
+
+[node name="Button" type="Button" parent="." unique_id=86436180]
+offset_left = 64.0
+offset_top = 32.0
+offset_right = 256.0
+offset_bottom = 96.0
+text = "Toggle motion"
+
+[connection signal="pressed" from="Button" to="Sprite2D" method="_on_button_pressed"]
