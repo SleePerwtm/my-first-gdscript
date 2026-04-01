@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b100bgo4t16la"]
+
+[ext_resource type="Texture2D" uid="uid://chrnflen6k2f2" path="res://icon.svg" id="1_f7cmv"]
+[ext_resource type="Script" uid="uid://tst4g2fn8prm" path="res://listen_player_input/listen_player_input.gd" id="2_mehiu"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=15921416]
+position = Vector2(576, 320)
+texture = ExtResource("1_f7cmv")
+script = ExtResource("2_mehiu")
